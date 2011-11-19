@@ -1,0 +1,21 @@
+Clase PHP para mostrar las fechas en formato "Hace x dias x min x segundos".
+Compatible con PHP >= 5.3
+Se ejecuta de la siguiente forma:
+
+date_default_timezone_set('Europe/Madrid');
+$hace = new haceTanto('2010-02-22 18:42:00','s');
+echo 'Hace'.$hace;
+
+1. Definimos el Timezone que nos encontramos
+2. Creamos la instancia de haceTanto pasando dos valores.
+Una fecha por ejemplo: “2011-10-26″
+La profundidad hasta la que queremos mostrar siendo los posibles valores: ‘y’ => años ,’m’ => meses, ‘d’ => dias, ‘i’ => horas, ‘m’ => minutos, ‘s’ => segundos
+3. Imprimimos la fecha
+
+El ejemplo anterior imprime:
+
+date_default_timezone_set('Europe/Madrid');
+$hace = new haceTanto('2010-02-22 18:42:00','s');
+echo 'Hace'.$hace;
+//Hace 1 año 8 meses 27 dias 28 minutos 5 segundos
+
